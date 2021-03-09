@@ -50,6 +50,7 @@ void loop(){
       Serial.println(compare);                               // Prints "This" to make sure we recieved it
       Serial.println("NOO");                               // Prints noo to serial monitor means this device lost
       } 
+    
       client.stop();                                      //Need to stop the client only once
 
                                                    
