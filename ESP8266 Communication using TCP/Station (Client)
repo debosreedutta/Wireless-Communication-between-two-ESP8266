@@ -4,8 +4,8 @@
 #include <WiFiClient.h>
 
 WiFiServer server(80);
-const char* ssid = "your SSID";
-const char* password = "your Password";
+const char* ssid = "Your SSID";
+const char* password = "Your Password";
 
 //Your IP address or domain name with URL path
 const char* serverName = "192.168.4.1";
@@ -33,9 +33,11 @@ void loop()
 {  
   if(client.connect(serverName, 80))
   {
-    client.print(" **A message as per your wish** \n");
+    client.print(" --A message as per your choice-- \n");
     client.stop();
     String c = client.readStringUntil('\n');
     Serial.println(c);
     }
 }
+
+
